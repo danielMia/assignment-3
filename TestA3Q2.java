@@ -16,12 +16,14 @@ public class TestA3Q2 {
     final double BUTTON_WIDTH = 0.04;    
     //Create a group of 3 buttons
     GUIgroup myButtons = new GUIgroup();
-    myButtons.addElement(new Button(RIGHT,Y,BUTTON_HEIGHT,BUTTON_WIDTH,"Red"));
-    myButtons.addElement(new Button(CENTRE,Y,BUTTON_HEIGHT,BUTTON_WIDTH,"Green"));
-    myButtons.addElement(new Button(LEFT,Y,BUTTON_HEIGHT,BUTTON_WIDTH,"Blue"));
+    myButtons.addElement(new Button2(RIGHT,Y,BUTTON_HEIGHT,BUTTON_WIDTH,"Red"));
+    myButtons.addElement(new Button2(CENTRE,Y,BUTTON_HEIGHT,BUTTON_WIDTH,"Green"));
+    myButtons.addElement(new Button2(LEFT,Y,BUTTON_HEIGHT,BUTTON_WIDTH,"Blue"));
      
     //Handle mouse clicks and make it all work.
     myButtons.draw();
+    drawRed();
+    drawBlue();
     while(true){
       if(StdDraw.mousePressed()){  //Check for a mouse click
         myButtons.handleClick(StdDraw.mouseX(),StdDraw.mouseY());
