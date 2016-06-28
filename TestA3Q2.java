@@ -22,8 +22,6 @@ public class TestA3Q2 {
      
     //Handle mouse clicks and make it all work.
     myButtons.draw();
-    drawRed();
-    drawBlue();
     while(true){
       if(StdDraw.mousePressed()){  //Check for a mouse click
         myButtons.handleClick(StdDraw.mouseX(),StdDraw.mouseY());

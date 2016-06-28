@@ -1,6 +1,8 @@
-public class Handler{
 
+public class Handler {
 
-  public void doIt(){}
-  
+public void doIt(){
+	
+}
+
 }

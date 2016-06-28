@@ -1,8 +1,10 @@
+
 public class HandleBlue extends Handler{
-  
-  
-    public void doIt(){
-//    drawBlue();
-    }
-  
+
+	public HandleBlue() {
+		// TODO Auto-generated constructor stub
+	}
+	public void doIt(){
+		TestA3Q2.drawBlue();
+	}
 }
